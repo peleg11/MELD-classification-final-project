@@ -1,6 +1,10 @@
-form {
+.form {
   display: flex;
-  gap: 4px;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
 }
 input,
 button {
@@ -13,4 +17,8 @@ button {
 }
 input {
   cursor: auto;
+}
+.upload {
+  display: flex;
+  gap: 8px;
 }

@@ -1,13 +1,10 @@
-from flask import Flask, request
+from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
 
 @app.route("/", methods=["POST", "GET"])
 def test():
-    if request.method == "POST":
-        req = request.json
-        print(req)
-        return {"ok": True}
-    else:
-        return {"ok": False}
+    file_dict = request.files.to_dict()
+    file_dict["File"].save("uploaded.txt")
+    return jsonify("upload succesfull")

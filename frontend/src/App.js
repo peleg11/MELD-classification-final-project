@@ -13,10 +13,7 @@ function App() {
   };
   return (
     <div className="App">
-      <button className="show-form-btn" onClick={handleShowForm}>
-        {showForm ? "Hide" : "Show"} Form
-      </button>
-      {showForm && <Form />}
+      <Form />
     </div>
   );
 }
