@@ -1,9 +1,13 @@
-from flask import Flask
-import time
+from flask import Flask, request
 
 app = Flask(__name__)
 
 
-@app.route("/time")
-def get_current_time():
-    return {"time": time.time()}
+@app.route("/", methods=["POST", "GET"])
+def test():
+    if request.method == "POST":
+        req = request.json
+        print(req)
+        return {"ok": True}
+    else:
+        return {"ok": False}

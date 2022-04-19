@@ -1,0 +1,16 @@
+form {
+  display: flex;
+  gap: 4px;
+}
+input,
+button {
+  border-radius: 4px;
+  padding: 8px;
+  border: 1px solid black;
+  box-shadow: 6px 2px 8px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  font-size: 18px;
+}
+input {
+  cursor: auto;
+}
