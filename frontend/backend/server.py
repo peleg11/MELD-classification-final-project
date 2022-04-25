@@ -6,5 +6,5 @@ app = Flask(__name__)
 @app.route("/", methods=["POST", "GET"])
 def test():
     file_dict = request.files.to_dict()
-    file_dict["File"].save("uploaded.txt")
+    file_dict["File"].save("uploaded.csv")
     return jsonify("upload succesfull")
