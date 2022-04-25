@@ -5,7 +5,6 @@ const Form = (props) => {
   const [selectedFile, setSelectedFile] = useState();
   const [showForm, setShowForm] = useState(false);
   const [waitMSG, setWaitMSG] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
   const handleShowForm = () => {
     if (showForm) {
       setShowForm(false);
