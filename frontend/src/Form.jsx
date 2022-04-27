@@ -27,11 +27,12 @@ const Form = (props) => {
       body: formData,
     })
       .then((response) => {
-        response.json();
+        return response.json();
       })
       .then((result) => {
         console.log("Success:", result);
         props.onSubmited(true);
+        props.getResult(result);
         setWaitMSG(false);
       })
       .catch((error) => {

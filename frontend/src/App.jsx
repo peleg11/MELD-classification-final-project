@@ -5,13 +5,19 @@ import Results from "./Results";
 
 function App() {
   const [isSubmited, setIsSubmited] = useState(false);
+  const [Data, setData] = useState();
   const submitedHandler = (submitedState) => {
     setIsSubmited(submitedState);
   };
+  const resultHandler = (data) => {
+    setData(data);
+  };
   return (
     <div className="App">
-      {!isSubmited && <Form onSubmited={submitedHandler} />}
-      {isSubmited && <Results />}
+      {!isSubmited && (
+        <Form onSubmited={submitedHandler} getResult={resultHandler} />
+      )}
+      {isSubmited && <Results data={Data} />}
     </div>
   );
 }
