@@ -7,4 +7,5 @@ app = Flask(__name__)
 def test():
     file_dict = request.files.to_dict()
     file_dict["File"].save("C:/Users/user/Desktop/flask_react_app/frontend/src/uploaded.csv")
+
     return {"succesfull": "yes"}

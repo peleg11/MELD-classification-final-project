@@ -1,0 +1,7 @@
+.result-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  align-items: center;
+  flex: 0 1;
+}
