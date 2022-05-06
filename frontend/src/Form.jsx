@@ -65,6 +65,7 @@ const Form = (props) => {
       {/* )} */}
       <div className={`wait ${waitMSG ? "" : "hidden"}`}>
         File uploaded.. please wait
+        <img src="../1121-iota-internet-of-things.svg" alt="spinner" />
       </div>
     </div>
   );
