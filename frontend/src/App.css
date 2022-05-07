@@ -3,12 +3,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
+  color: rgba(0, 0, 0, 0.712);
 }
 .App {
   background-image: url("../WallpaperDog-855624.jpg");
   background-repeat: no-repeat;
   height: 100vh;
-  background-size: 100%;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;

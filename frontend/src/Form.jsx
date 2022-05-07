@@ -64,8 +64,19 @@ const Form = (props) => {
       </form>
       {/* )} */}
       <div className={`wait ${waitMSG ? "" : "hidden"}`}>
-        File uploaded.. please wait
-        <img src="../1121-iota-internet-of-things.svg" alt="spinner" />
+        {/* <img
+          src={spinner}
+          alt="spinner"
+          style={{ width: "140px", height: "140px" }}
+        /> */}
+        <lord-icon
+          src="https://cdn.lordicon.com/vlupvdhl.json"
+          trigger="loop"
+          delay="30"
+          colors="primary:#b3c6cd,secondary:#c6d9df"
+          style={{ width: "250px", height: "250px" }}
+        ></lord-icon>
+        File uploaded... please wait!
       </div>
     </div>
   );
