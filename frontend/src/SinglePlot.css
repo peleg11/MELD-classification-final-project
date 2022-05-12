@@ -1,0 +1,37 @@
+.single-form {
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  gap: 4px;
+  align-items: center;
+}
+.plot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 4px;
+  flex-direction: column;
+}
+.image {
+  border-radius: 4px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #b9b9b9;
+}
+input:hover {
+  border: 1px solid #f5232389;
+}
+input:focus {
+  border: 1px solid #444444;
+  outline: none;
+}
+img {
+  transition: ease 1s;
+}
+.hidden {
+  opacity: 100;
+}

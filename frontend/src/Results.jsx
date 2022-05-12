@@ -1,10 +1,11 @@
 import "./Results.css";
 import file from "./results.csv";
+import SinglePlot from "./SinglePlot";
 const Results = (props) => {
   console.log("from results:", props.data);
   return (
     <div className="result-container">
-      <h1>First 15 patients results:</h1>
+      <h1>Random 10 patients (Results sample):</h1>
       <table>
         <thead>
           <tr>
@@ -30,6 +31,7 @@ const Results = (props) => {
           Download full <b>Results</b>
         </button>
       </a>
+      <SinglePlot className="sp-container" />
     </div>
   );
 };
