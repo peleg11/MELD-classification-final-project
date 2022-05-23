@@ -3,15 +3,8 @@ import "./Form.css";
 
 const Form = (props) => {
   const [selectedFile, setSelectedFile] = useState();
-  const [showForm, setShowForm] = useState(false);
   const [waitMSG, setWaitMSG] = useState(false);
-  const handleShowForm = () => {
-    if (showForm) {
-      setShowForm(false);
-    } else {
-      setShowForm(true);
-    }
-  };
+
   const changeHandler = (event) => {
     setSelectedFile(event.target.files[0]);
   };
@@ -43,14 +36,7 @@ const Form = (props) => {
 
   return (
     <div className="form">
-      <button
-        className={`show-form-btn ${waitMSG ? "hidden" : ""}`}
-        onClick={handleShowForm}
-      >
-        {showForm ? "Hide" : "Show"} Form
-      </button>
-      {/* {showForm && ( */}
-      <form className={`upload ${waitMSG || !showForm ? "hidden" : ""}`}>
+      <form className={`upload ${waitMSG ? "hidden" : ""}`}>
         <label htmlFor="inputTag">
           <input
             id="inputTag"

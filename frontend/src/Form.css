@@ -4,7 +4,6 @@
   transition: ease 1s;
   gap: 18px;
   flex: 1;
-  margin-top: 100px;
 }
 input[type="file"] {
   font-size: 18px;
@@ -58,6 +57,6 @@ input {
   gap: 12px;
   align-items: center;
 }
-/* .hidden {
+.hidden {
   opacity: 0;
-} */
+}

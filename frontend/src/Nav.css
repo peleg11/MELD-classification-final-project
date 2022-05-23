@@ -1,0 +1,30 @@
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  background: #dae3e5;
+  padding: 12px;
+}
+.box {
+  display: flex;
+  width: 650px;
+  justify-content: space-around;
+  font-size: 22px;
+}
+.info {
+  display: flex;
+  gap: 22px;
+}
+.box div {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.box div:hover {
+  transition: 0.2s linear;
+  cursor: pointer;
+  color: #679dba;
+}
+.bold {
+  color: #679dba;
+  font-weight: 700;
+  transition: 0.2s ease;
+}

@@ -33,5 +33,5 @@ img {
   transition: ease 1s;
 }
 .hidden {
-  opacity: 100;
+  opacity: 0;
 }
