@@ -11,7 +11,6 @@ const Results = (props) => {
           <tr>
             <th>ID number</th>
             <th>Calculated class</th>
-            <th>Transplantion propbabilty</th>
           </tr>
         </thead>
         <tbody>
@@ -20,7 +19,6 @@ const Results = (props) => {
               <tr key={id}>
                 <td>{id}</td>
                 <td>{calculated_group}</td>
-                <td>NaN</td>
               </tr>
             );
           })}

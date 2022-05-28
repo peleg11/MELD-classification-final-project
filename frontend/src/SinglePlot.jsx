@@ -49,8 +49,7 @@ const SinglePlot = (props) => {
           <img
             src={plot}
             alt="plot"
-            className={idSubmitted ? "image" : "plot hidden"}
-            style={{ height: "325px" }}
+            className={idSubmitted ? "plot" : "hidden"}
           />
         </div>
       )}

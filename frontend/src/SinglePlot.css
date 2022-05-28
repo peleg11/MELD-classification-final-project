@@ -12,11 +12,10 @@
   gap: 6px;
   padding: 4px;
   flex-direction: column;
-}
-.image {
   border-radius: 4px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
 }
+
 input {
   padding: 10px;
   border-radius: 5px;

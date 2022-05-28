@@ -3,7 +3,6 @@
   flex-direction: column;
   gap: 16px;
   align-items: center;
-  flex: 0 1;
   justify-content: center;
 }
 table {

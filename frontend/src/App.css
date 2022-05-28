@@ -7,12 +7,11 @@
 }
 .App {
   background-image: url("../WallpaperDog-855624.jpg");
-  background-repeat: repeat-y;
-  height: 100vh;
+  background-repeat: no-repeat;
+  height: 115vh;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   padding: 12px;
 }
