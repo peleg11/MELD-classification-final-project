@@ -1,4 +1,4 @@
-# This repo is for the GUI of my final project, a algorith classifier of meld scores of pataints waiting for liver transplantation
+# This repo is for the GUI of my final project, an algorith classifier of meld scores of pataints waiting for liver transplantation
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
