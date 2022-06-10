@@ -10,7 +10,7 @@ def main():
     file_dict["File"].save("./afterClean.csv")
     results = api_function()
     results.to_csv(
-        "C:/Users/user/Desktop/flask_react_app/frontend/src/results.csv")
+        "../src/results.csv")
     return results.sample(10).to_json(orient="records")
 
 

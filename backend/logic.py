@@ -1,5 +1,5 @@
 from datetime import datetime, date
-
+import os
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -266,4 +266,4 @@ def get_single_plot(id):
             toDrop.append(key)
     df = df.T.drop(toDrop).T
     return createLR_Plot(df, int(id),
-                         "C:/Users/user/Desktop/flask_react_app/frontend/src", to_save=True, to_show=False, get_predicted=False)
+                         "../src", to_save=True, to_show=False, get_predicted=False)
